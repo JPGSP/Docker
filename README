@@ -1,1 +1,7 @@
 Basic docker configuration.
+
+INSTRUCTIONS
+-----------------------------
+
+1. Rename the containers in the file docker-composer.yml
+2. Go to the folder where you have the files from the terminal and build the containers -> docker-compose up --build
