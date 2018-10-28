@@ -4,4 +4,17 @@ INSTRUCTIONS
 -----------------------------
 
 1. Rename the containers in the file docker-composer.yml
-2. Go to the folder where you have the files from the terminal and build the containers -> docker-compose up --build
+2. Go to the folder where you have the files from the terminal and build the containers
+  ``` docker-compose up --build || docker-compose up --build --no-start ```
+3. Once the process has finished it. Starting the containers.
+  ``` docker-compose start```
+4. Check the containers are running
+  ``` docker-compose ps ```
+5. Following all these steps, we can see there is one container which is not working, (nginx).
+It is happen because, it needs a log file. (Info given though the command docker-compose up --build)
+Create the file in the following path (this folder is at the same level as .docker)
+```app/logs/nginx.access.log```
+6. Running composer again
+  ``` docker-compose start```
+7. Verify everything is set up
+  ``` docker-compose ps ```
