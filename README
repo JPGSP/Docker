@@ -18,3 +18,5 @@ Create the file in the following path (this folder is at the same level as .dock
   ``` docker-compose start```
 7. Verify everything is set up
   ``` docker-compose ps ```
+8. When the containers have started, you can go to 
+  ``` http://localhost:8000/ ```
